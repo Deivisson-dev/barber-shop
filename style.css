@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root{
+    --primary-color: #06121E;
+    --primary-dark: #040f1a;
+    --primary-light: #0c2135;
+    --secondary-normal: #090d11;
+    --secondaty-dark: #06090c;
+    --secondary-light: #1a1f25;
+    --white-normal: #ffffff;
+    --white-dark: #edeaef;
+    --white-light: #fefbff;
+    --red-normal: #d94140;
+    --red-dark: #b42b2b;
+    --red-light: #d34040;
+}
+
+
+body{
+    font-family: 'Sora', sans-serif;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: var(--primary-color);
+}
+
+button{
+    font-family: 'Sora', sans-serif;
+    cursor: pointer;
+}
+
+svg{
+    width: 100%;
+}
+
+
+
+img{
+    width: 100%;
+}
+
+a{
+    cursor: pointer;
+    outline: none;
+}
+
+
+header{
+    width: 100%;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+i{
+    color: var(--white-normal);
+}
+
+.header-icons{
+    display: flex;
+    gap: 15px;
+}
+
+.header-icons a i:hover{
+    color: var(--red-light);
+    animation: translateY 0.8s;
+}
+
+
+@keyframes translateY {
+    from{
+        transform: translateY(0) scale(1);
+    }
+    to{
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+.header-button{
+    border: 1px solid var(--white-normal);
+    padding: 8px 24px;
+    border-radius: 4px;
+    color: var(--white-normal);
+    text-decoration: none;
+    background-color: transparent;
+    transition: background-color 0.8s;
+}
+
+
+.header-button:hover{
+    border: 1px solid var(--red-light);
+    background-color: var(--red-light);
+}
+
+
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
