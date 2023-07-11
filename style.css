@@ -107,3 +107,157 @@ i{
     align-items: center;
     margin-top: 20px;
 }
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.bg-home{
+    position: relative;
+}
+
+.bg-home::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121E), url('assets/bg.svg');
+    left: 0;
+    top: 0;
+    opacity: 0.9;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+.hero{
+    color: var(--white-normal);
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+}
+
+.hero h1{
+    line-height: 150%;
+    font-size: 48px;
+    text-align: center;
+    max-width: 940px;
+}
+
+.hero p{
+    margin: 14px 0;
+    text-align: center;
+}
+
+.button-contact{
+    border: 0;
+    padding: 14px 8px;
+    border-radius: 4px;
+    color: var(--white-normal);
+    background-color: var(--red-normal);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0;
+}
+
+.button-contact:hover{
+    animation: scaleButton 0.8s alternate infinite;
+}
+
+.about{
+    background-color: var(--primary-color);
+    overflow: hidden;
+    color: var(--white-normal);
+}
+
+.about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px;
+}
+
+.about-content img{
+    max-width: 570px;
+}
+
+.about-content div{
+    flex: 1;
+}
+
+.about-description h2{
+    font-size: 38px;
+    margin-bottom: 21px;
+}
+
+.about-description p{
+    margin-bottom: 14px;
+    line-height: 150%;
+}
+
+@keyframes scaleButton {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header-icons{
+        margin-top: 46px;
+    }
+
+    .header-button{
+        display: none;
+    }
+
+    i{
+        font-size: 34px;
+    }
+
+    .header-logo{
+        margin-top: 56px;
+    }
+
+    .hero{
+        min-height: 60vh;
+    }
+
+    .hero h1{
+        font-size: 34px;
+        padding: 0 14px;
+        width: 100%;
+    }
+
+    .hero p{
+        font-size: 14px;
+    }
+
+    .about-content{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .hero h1{
+        font-size: 24px;
+    }
+}
