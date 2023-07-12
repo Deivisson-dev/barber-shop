@@ -74,6 +74,11 @@ i{
     animation: translateY 0.8s;
 }
 
+.footer-icons a i:hover{
+    color: var(--red-light);
+    animation: translateY 0.8s;
+}
+
 
 @keyframes translateY {
     from{
