@@ -307,6 +307,10 @@ i{
     color: var(--white-normal);
 }
 
+.footer p{
+    text-align: center;
+}
+
 .btn-whatsapp{
     position: fixed;
     bottom: 14px;
